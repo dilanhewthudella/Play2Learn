@@ -1,0 +1,128 @@
+.home-page {
+  width: 100%;
+  min-height: calc(100vh - 140px);
+  margin: 0;
+  padding: 60px 24px 80px;
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(78, 115, 255, 0.15),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at top right,
+      rgba(128, 90, 213, 0.13),
+      transparent 30%
+    ),
+    #f7f9fc;
+}
+
+.hero-section {
+  max-width: 760px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.hero-badge {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 8px 16px;
+  border: 1px solid rgba(67, 97, 238, 0.2);
+  border-radius: 999px;
+  background-color: rgba(67, 97, 238, 0.08);
+  color: #4361ee;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-section h1 {
+  margin: 0 0 18px;
+  color: #172033;
+  font-size: clamp(2.4rem, 6vw, 4.5rem);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.hero-section p {
+  max-width: 620px;
+  margin: 0 auto;
+  color: #667085;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.games-section {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.section-label {
+  display: block;
+  margin-bottom: 6px;
+  color: #4361ee;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.section-heading h2 {
+  margin: 0;
+  color: #1d2939;
+  font-size: clamp(1.7rem, 4vw, 2.3rem);
+}
+
+.game-count {
+  padding: 8px 14px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #667085;
+  font-size: 0.9rem;
+  font-weight: 600;
+  box-shadow: 0 4px 14px rgba(16, 24, 40, 0.06);
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 26px;
+}
+
+@media (max-width: 900px) {
+  .game-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .home-page {
+    padding: 40px 16px 60px;
+  }
+
+  .hero-section {
+    margin-bottom: 45px;
+  }
+
+  .section-heading {
+    align-items: flex-start;
+  }
+
+  .game-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .game-count {
+    white-space: nowrap;
+  }
+}

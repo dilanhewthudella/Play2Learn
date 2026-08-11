@@ -1,0 +1,417 @@
+.math-settings-page {
+  width: 100%;
+  min-height: calc(100vh - 130px);
+  padding: 55px 20px 90px;
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(67, 97, 238, 0.16),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at top right,
+      rgba(112, 72, 232, 0.13),
+      transparent 30%
+    ),
+    #f7f9fc;
+}
+
+.math-settings-card {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid #e4e7ec;
+  border-radius: 28px;
+  background-color: #ffffff;
+  box-shadow: 0 24px 60px rgba(16, 24, 40, 0.12);
+}
+
+.math-settings-header {
+  padding: 45px 38px 38px;
+  background: linear-gradient(
+    135deg,
+    rgba(67, 97, 238, 0.97),
+    rgba(112, 72, 232, 0.95)
+  );
+  color: #ffffff;
+  text-align: center;
+}
+
+.math-settings-badge {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 7px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 999px;
+  background-color: rgba(255, 255, 255, 0.14);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.math-settings-header h1 {
+  margin: 0 0 15px;
+  color: #ffffff;
+  font-size: clamp(2.3rem, 7vw, 3.7rem);
+  font-weight: 850;
+  letter-spacing: -0.04em;
+}
+
+.math-settings-header p {
+  max-width: 540px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.math-settings-form {
+  padding: 36px;
+}
+
+.settings-field {
+  display: grid;
+  grid-template-columns: 45px 1fr;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #e4e7ec;
+  border-radius: 17px;
+  background-color: #f9fafb;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.settings-field:focus-within {
+  transform: translateY(-2px);
+  border-color: #4361ee;
+  box-shadow: 0 8px 22px rgba(67, 97, 238, 0.12);
+}
+
+.field-number {
+  display: flex;
+  width: 42px;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #4361ee, #7048e8);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 800;
+  box-shadow: 0 7px 16px rgba(67, 97, 238, 0.25);
+}
+
+.field-content {
+  min-width: 0;
+}
+
+/*
+These rules style the label and select rendered
+inside your SelectInput component.
+*/
+.field-content label {
+  display: block;
+  margin-bottom: 8px;
+  color: #344054;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.field-content select {
+  width: 100%;
+  min-height: 48px;
+  padding: 10px 42px 10px 14px;
+  border: 1px solid #d0d5dd;
+  border-radius: 11px;
+  background-color: #ffffff;
+  color: #1d2939;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.field-content select:hover {
+  border-color: #98a2b3;
+}
+
+.field-content select:focus {
+  border-color: #4361ee;
+  box-shadow: 0 0 0 4px rgba(67, 97, 238, 0.12);
+}
+
+.settings-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 28px 0;
+}
+
+.settings-summary > div {
+  padding: 16px 12px;
+  border: 1px solid #e4e7ec;
+  border-radius: 14px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.summary-label {
+  display: block;
+  margin-bottom: 5px;
+  color: #667085;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.settings-summary strong {
+  color: #1d2939;
+  font-size: 0.95rem;
+}
+
+.play-button-container {
+  margin-top: 8px;
+}
+
+/*
+This styles the button or link rendered
+inside the PlayButton component.
+*/
+.play-button-container button,
+.play-button-container a {
+  display: flex;
+  width: 100%;
+  min-height: 54px;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #4361ee, #7048e8);
+  color: #ffffff;
+  font: inherit;
+  font-size: 1.05rem;
+  font-weight: 750;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 10px 22px rgba(67, 97, 238, 0.28);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.play-button-container button:hover,
+.play-button-container a:hover {
+  transform: translateY(-2px);
+  color: #ffffff;
+  box-shadow: 0 14px 28px rgba(67, 97, 238, 0.36);
+}
+
+.play-button-container button:active,
+.play-button-container a:active {
+  transform: translateY(0);
+}
+
+.play-button-container button:focus-visible,
+.play-button-container a:focus-visible {
+  outline: 3px solid rgba(67, 97, 238, 0.3);
+  outline-offset: 3px;
+}
+
+.how-to-play-card {
+  width: 100%;
+  max-width: 720px;
+  margin: 28px auto 0;
+  padding: 28px;
+  border: 1px solid #e4e7ec;
+  border-radius: 22px;
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 12px 35px rgba(16, 24, 40, 0.07);
+  backdrop-filter: blur(10px);
+}
+
+.how-to-play-card h2 {
+  margin: 0 0 20px;
+  color: #1d2939;
+  font-size: 1.35rem;
+  text-align: center;
+}
+
+.instructions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.instruction {
+  padding: 16px;
+  border-radius: 14px;
+  background-color: #f8f9fc;
+  text-align: center;
+}
+
+.instruction span {
+  display: flex;
+  width: 34px;
+  height: 34px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  background-color: #eef2ff;
+  color: #4361ee;
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.instruction p {
+  margin: 0;
+  color: #667085;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 650px) {
+  .math-settings-page {
+    padding: 25px 12px 65px;
+  }
+
+  .math-settings-card {
+    border-radius: 21px;
+  }
+
+  .math-settings-header {
+    padding: 35px 22px 30px;
+  }
+
+  .math-settings-form {
+    padding: 22px 18px;
+  }
+
+  .settings-field {
+    grid-template-columns: 38px 1fr;
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .field-number {
+    width: 36px;
+    height: 36px;
+  }
+
+  .settings-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .instructions-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .how-to-play-card {
+    padding: 22px 18px;
+  }
+  .instructions-card {
+    width: 100%;
+    max-width: 680px;
+    margin: 24px auto 0;
+    padding: 28px;
+    border: 1px solid #e4e7ec;
+    border-radius: 22px;
+    background: #ffffff;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  }
+
+  .instructions-header {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .instructions-header span {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: #4361ee;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+  }
+
+  .instructions-header h2 {
+    margin: 0;
+    font-size: 2rem;
+    color: #1d2939;
+  }
+
+  .instructions-grid {
+    display: grid;
+    gap: 18px;
+  }
+
+  .instruction-item {
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    padding: 18px;
+    border-radius: 16px;
+    background: #f8f9fc;
+    transition: 0.2s;
+  }
+
+  .instruction-item:hover {
+    transform: translateY(-2px);
+    background: #eef3ff;
+  }
+
+  .instruction-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #4361ee, #7048e8);
+    color: white;
+    font-size: 1.3rem;
+  }
+
+  .instruction-item h4 {
+    margin: 0 0 6px;
+    color: #1d2939;
+  }
+
+  .instruction-item p {
+    margin: 0;
+    color: #667085;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 700px) {
+    .instructions-card {
+      padding: 20px;
+    }
+
+    .instruction-item {
+      gap: 12px;
+      padding: 14px;
+    }
+
+    .instruction-icon {
+      min-width: 42px;
+      height: 42px;
+      font-size: 1.1rem;
+    }
+
+    .instructions-header h2 {
+      font-size: 1.6rem;
+    }
+  }
+}

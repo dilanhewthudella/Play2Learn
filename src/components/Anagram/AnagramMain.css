@@ -1,0 +1,303 @@
+.anagram-settings-page {
+  width: 100%;
+  min-height: calc(100vh - 120px);
+  padding: 24px 16px 70px;
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(67, 97, 238, 0.14),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at top right,
+      rgba(112, 72, 232, 0.12),
+      transparent 30%
+    ),
+    #f7f9fc;
+}
+
+.anagram-settings-card,
+.anagram-instructions-card {
+  width: 100%;
+  max-width: 680px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid #e4e7ec;
+  border-radius: 24px;
+  background-color: #ffffff;
+  box-shadow: 0 20px 50px rgba(16, 24, 40, 0.11);
+}
+
+.anagram-settings-header {
+  min-height: 220px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.anagram-settings-overlay {
+  display: flex;
+  min-height: 220px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background: linear-gradient(
+    135deg,
+    rgba(21, 31, 78, 0.88),
+    rgba(77, 39, 126, 0.8)
+  );
+  color: #ffffff;
+  text-align: center;
+}
+
+.anagram-badge {
+  margin-bottom: 10px;
+  padding: 6px 13px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 999px;
+  background-color: rgba(255, 255, 255, 0.16);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.anagram-settings-overlay h1 {
+  margin: 0 0 10px;
+  color: #ffffff;
+  font-size: clamp(2.3rem, 6vw, 3.5rem);
+  font-weight: 850;
+}
+
+.anagram-settings-overlay p {
+  max-width: 500px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.92);
+  line-height: 1.6;
+}
+
+.anagram-settings-content {
+  padding: 26px 28px 30px;
+}
+
+.word-length-field {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 15px;
+  align-items: center;
+  padding: 18px;
+  border: 1px solid #e4e7ec;
+  border-radius: 16px;
+  background-color: #f9fafb;
+}
+
+.field-step {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+  background: linear-gradient(135deg, #4361ee, #7048e8);
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.field-body label {
+  display: block;
+  margin-bottom: 7px;
+  color: #344054;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.field-body input {
+  width: 100%;
+  min-height: 46px;
+  padding: 10px 12px;
+  border: 1px solid #d0d5dd;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #1d2939;
+  font: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  outline: none;
+}
+
+.field-body input:focus {
+  border-color: #4361ee;
+  box-shadow: 0 0 0 4px rgba(67, 97, 238, 0.12);
+}
+
+.field-body span {
+  display: block;
+  margin-top: 6px;
+  color: #667085;
+  font-size: 0.8rem;
+}
+
+.anagram-setting-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 18px 0;
+}
+
+.anagram-setting-summary div {
+  padding: 12px 8px;
+  border: 1px solid #e4e7ec;
+  border-radius: 12px;
+  background-color: #f9fafb;
+  text-align: center;
+}
+
+.anagram-setting-summary span {
+  display: block;
+  margin-bottom: 4px;
+  color: #667085;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.anagram-setting-summary strong {
+  color: #1d2939;
+  font-size: 0.88rem;
+}
+
+.anagram-play-button button,
+.anagram-play-button a {
+  display: flex;
+  width: 100%;
+  min-height: 52px;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 13px;
+  background: linear-gradient(135deg, #4361ee, #7048e8);
+  color: #ffffff;
+  font: inherit;
+  font-weight: 750;
+  text-decoration: none;
+  box-shadow: 0 9px 20px rgba(67, 97, 238, 0.27);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.anagram-play-button button:hover,
+.anagram-play-button a:hover {
+  transform: translateY(-2px);
+  color: #ffffff;
+  box-shadow: 0 13px 26px rgba(67, 97, 238, 0.35);
+}
+
+.anagram-instructions-card {
+  margin-top: 24px;
+  padding: 28px;
+}
+
+.instructions-heading {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.instructions-heading span {
+  color: #4361ee;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.instructions-heading h2 {
+  margin: 5px 0 0;
+  color: #1d2939;
+  font-size: 1.7rem;
+}
+
+.anagram-instructions-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.anagram-instruction {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  border-radius: 14px;
+  background-color: #f8f9fc;
+}
+
+.instruction-number {
+  display: flex;
+  min-width: 36px;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #eef2ff;
+  color: #4361ee;
+  font-weight: 800;
+}
+
+.anagram-instruction h3 {
+  margin: 0 0 5px;
+  color: #1d2939;
+  font-size: 0.95rem;
+}
+
+.anagram-instruction p {
+  margin: 0;
+  color: #667085;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .anagram-settings-page {
+    padding: 14px 10px 50px;
+  }
+
+  .anagram-settings-card,
+  .anagram-instructions-card {
+    border-radius: 18px;
+  }
+
+  .anagram-settings-header,
+  .anagram-settings-overlay {
+    min-height: 185px;
+  }
+
+  .anagram-settings-content {
+    padding: 18px 16px 22px;
+  }
+
+  .anagram-setting-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .anagram-setting-summary div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .anagram-setting-summary span {
+    margin: 0;
+  }
+
+  .anagram-instructions-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .anagram-instructions-card {
+    padding: 22px 18px;
+  }
+}
