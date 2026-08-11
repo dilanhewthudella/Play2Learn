@@ -9,6 +9,12 @@ The application currently includes **Math Facts** and **Anagram Hunt**, with add
 ## 🎥 Demo
 
 The application provides a simple game-selection screen where users can choose an educational game and start playing.
+<img width="876" height="867" alt="homepage" src="https://github.com/user-attachments/assets/911ad984-1bf9-45eb-ae01-84b000d9825e" />
+<img width="867" height="912" alt="math game1" src="https://github.com/user-attachments/assets/caa0f541-22af-48c8-95d7-12489f5853f8" />
+<img width="885" height="890" alt="math game2" src="https://github.com/user-attachments/assets/e791eb0c-c7e3-4557-9115-800a3278403f" />
+<img width="867" height="917" alt="anagram 1" src="https://github.com/user-attachments/assets/789f88db-dbf2-4303-961e-6688f434507d" />
+<img width="872" height="887" alt="anagram 2" src="https://github.com/user-attachments/assets/ef6bae73-1cbf-4fdf-a07d-e38b5596959d" />
+
 
 ### Games Included
 
